@@ -30,11 +30,13 @@ import '../box-styles.css'
 //   </div>
 // )
 
-function Box({className, style, children}) {
+function Box({className = '', style, ...otherProps}) {
   return (
-    <div className={`box ${className}`} style={{...style, fontStyle: 'italic'}}>
-      {children}
-    </div>
+    <div
+      className={`box ${className}`}
+      style={{fontStyle: 'italic', ...style}}
+      {...otherProps}
+    />
   )
 }
 
