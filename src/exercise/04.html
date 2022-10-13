@@ -40,7 +40,8 @@
         console.log(props)
       },
     }
-    const element = <Message hello="Hello" />
+    console.log(PropTypes)
+    const element = <Message hello="Hello" goodbye="World" />
     // 💯 This is only the first step to making actual React components. The rest is in the extra credit!
     ReactDOM.createRoot(document.getElementById('root')).render(element)
   </script>
