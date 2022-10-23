@@ -53,7 +53,7 @@ function UsernameForm({onSubmitUsername}) {
     </form>
   )
 }
-
+// value ? value : null  is the same => value ?? null ?????????  (tutaj jesli jest 0 to przejdzie a w tym pierwszym nie przejdzie jak jest 0)
 // function UsernameForm({onSubmitUsername}) {
 //   // 🐨 add a submit event handler here (`handleSubmit`).
 //   // 💰 Make sure to accept the `event` as an argument and call
